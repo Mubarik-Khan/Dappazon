@@ -353,3 +353,31 @@ nav {
     grid-column: span 2;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .product__details {
+    flex-direction: column;
+  }
+
+  .product__image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .product__order {
+    text-align: center;
+  }
+
+  .product__bought {
+    text-align: center;
+  }
+}
+
+/* Responsive styles for medium devices (e.g., tablets) */
+@media screen and (max-width: 1024px) {
+  /* Add specific styles for medium devices if needed */
+}
+
+
+
+
