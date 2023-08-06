@@ -33,8 +33,11 @@ const Product = ({ item, provider, account, dappazon, togglePop }) => {
   }
 
   useEffect(() => {
-    fetchDetails()
-  }, [hasBought])
+    const fetchProductDetails = async () => {
+      await fetchDetails();
+    };
+    fetchProductDetails();
+  }, [hasBought, fetchDetails]);
 
   return (
     <div className="product">
